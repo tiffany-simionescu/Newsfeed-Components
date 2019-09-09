@@ -143,6 +143,7 @@ function articleComponent(
 
   // Add ClassList
   articleSection.classList.add("article");
+  // articleSection.classList.add("article-open");
   myDate.classList.add("date");
   myButton.classList.add("expandButton");
 
@@ -157,6 +158,7 @@ function articleComponent(
   // Event Listener for Button
 
   myButton.addEventListener("click", e => {
+    articleSection.classList.add("article-open");
     myButton.classList.toggle("article-open");
     myButton.classList.toggle("article");
   });

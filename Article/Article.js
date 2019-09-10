@@ -160,7 +160,7 @@ function articleComponent(obj) {
   myFirstParagraph.textContent = obj.firstParagraph;
   mySecondParagraph.textContent = obj.secondParagraph;
   myThirdParagraph.textContent = obj.thirdParagraph;
-  myButton.textContent = "Expand Article";
+  myButton.textContent = "Click to Expand";
 
   myButton.addEventListener("click", e => {
     myArticleDiv.classList.toggle("article-open");

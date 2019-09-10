@@ -131,15 +131,7 @@ const data = [
 
 */
 
-const articles = document.querySelector(".articles");
-
-function articleComponent(
-  title,
-  date,
-  firstParagraph,
-  secondParagraph,
-  thirdParagraph
-) {
+function articleComponent(obj) {
   // Create Elements
   const myArticleDiv = document.createElement("div");
   const myTitle = document.createElement("h2");
@@ -149,19 +141,6 @@ function articleComponent(
   const myThirdParagraph = document.createElement("p");
   const myButton = document.createElement("span");
 
-  // Add Classes
-  myArticleDiv.classList.add("article");
-  myButton.classList.add("expandButton");
-  myDate.classList.add("date");
-
-  // Add Content to Elements
-  myTitle.textContent = title;
-  myDate.textContent = date;
-  myFirstParagraph.textContent = firstParagraph;
-  mySecondParagraph.textContent = secondParagraph;
-  myThirdParagraph.textContent = thirdParagraph;
-  myButton.textContent = "Expand Article";
-
   // appendChild to Parent Node
   myArticleDiv.appendChild(myTitle);
   myArticleDiv.appendChild(myDate);
@@ -170,27 +149,29 @@ function articleComponent(
   myArticleDiv.appendChild(myThirdParagraph);
   myArticleDiv.appendChild(myButton);
 
+  // Apply Styles
+  myArticleDiv.classList.add("article");
+  myButton.classList.add("expandButton");
+  myDate.classList.add("date");
+
+  // Add Content to Elements
+  myTitle.textContent = obj.title;
+  myDate.textContent = obj.date;
+  myFirstParagraph.textContent = obj.firstParagraph;
+  mySecondParagraph.textContent = obj.secondParagraph;
+  myThirdParagraph.textContent = obj.thirdParagraph;
+  myButton.textContent = "Expand Article";
+
   myButton.addEventListener("click", e => {
-    myArticleDiv.classList.add("article-open");
-    myArticleDiv.classList.add("close");
-    myArticleDiv.classList.toggle("article-open close");
-    myArticleDiv.classList.toggle("article");
+    myArticleDiv.classList.toggle("article-open");
+    myArticleDiv.classList.toggle("close");
   });
 
   return myArticleDiv;
 }
 
-let newArticleComponent = data.map(obj => {
-  let myArticle = articleComponent(
-    obj.title,
-    obj.date,
-    obj.firstParagraph,
-    obj.secondParagraph,
-    obj.thirdParagraph
-  );
-  return myArticle;
-});
+const articles = document.querySelector(".articles");
 
-newArticleComponent.forEach(article => {
-  articles.appendChild(article);
+data.forEach(data => {
+  articles.appendChild(articleComponent(data));
 });

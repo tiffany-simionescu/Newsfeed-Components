@@ -162,9 +162,15 @@ function articleComponent(obj) {
   myThirdParagraph.textContent = obj.thirdParagraph;
   myButton.textContent = "Click to Expand";
 
+  // STRETCH - Added a Close Button
   myButton.addEventListener("click", e => {
-    myArticleDiv.classList.toggle("article-open");
-    myArticleDiv.classList.toggle("close");
+    if (myButton.textContent === "Click to Expand") {
+      myArticleDiv.classList.toggle("article-open");
+      myButton.textContent = "Click to Close";
+    } else {
+      myArticleDiv.classList.toggle("article-open");
+      myButton.textContent = "Click to Expand";
+    }
   });
 
   return myArticleDiv;

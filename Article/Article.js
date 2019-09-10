@@ -140,64 +140,57 @@ function articleComponent(
   secondParagraph,
   thirdParagraph
 ) {
-  // Create Elements Below
-  const articleSection = document.createElement("div");
-  const myTitle = document.createElement("h2"); // title
-  const myDate = document.createElement("p"); // date
+  // Create Elements
+  const myArticleDiv = document.createElement("div");
+  const myTitle = document.createElement("h2");
+  const myDate = document.createElement("p");
   const myFirstParagraph = document.createElement("p");
   const mySecondParagraph = document.createElement("p");
   const myThirdParagraph = document.createElement("p");
   const myButton = document.createElement("span");
 
-  // Text Content
+  // Add Classes
+  myArticleDiv.classList.add("article");
+  myButton.classList.add("expandButton");
+  myDate.classList.add("date");
+
+  // Add Content to Elements
   myTitle.textContent = title;
   myDate.textContent = date;
-
   myFirstParagraph.textContent = firstParagraph;
   mySecondParagraph.textContent = secondParagraph;
   myThirdParagraph.textContent = thirdParagraph;
-
   myButton.textContent = "Expand Article";
 
-  // Add ClassList
-  articleSection.classList.add("article");
-  // articleSection.classList.add("article-open");
-  myDate.classList.add("date");
-  myButton.classList.add("expandButton");
-
-  // Append to Parent
-  articleSection.appendChild(myTitle);
-  articleSection.appendChild(myDate);
-  articleSection.appendChild(myFirstParagraph);
-  articleSection.appendChild(mySecondParagraph);
-  articleSection.appendChild(myThirdParagraph);
-  articleSection.appendChild(myButton);
-
-  // Event Listener for Button
+  // appendChild to Parent Node
+  myArticleDiv.appendChild(myTitle);
+  myArticleDiv.appendChild(myDate);
+  myArticleDiv.appendChild(myFirstParagraph);
+  myArticleDiv.appendChild(mySecondParagraph);
+  myArticleDiv.appendChild(myThirdParagraph);
+  myArticleDiv.appendChild(myButton);
 
   myButton.addEventListener("click", e => {
-    articleSection.classList.add("article-open");
-    articleSection.classList.add("article");
-    articleSection.classList.add("close");
-    myButton.classList.toggle("article-open close");
-    // myButton.classList.toggle("article");
+    myArticleDiv.classList.add("article-open");
+    myArticleDiv.classList.add("close");
+    myArticleDiv.classList.toggle("article-open close");
+    myArticleDiv.classList.toggle("article");
   });
 
-  return articleSection;
+  return myArticleDiv;
 }
 
-let newArticleComponent = data.map(data => {
+let newArticleComponent = data.map(obj => {
   let myArticle = articleComponent(
-    data.title,
-    data.date,
-    data.firstParagraph,
-    data.secondParagraph,
-    data.thirdParagraph
+    obj.title,
+    obj.date,
+    obj.firstParagraph,
+    obj.secondParagraph,
+    obj.thirdParagraph
   );
-
   return myArticle;
 });
 
-newArticleComponent.forEach(dataItems => {
-  articles.appendChild(dataItems);
+newArticleComponent.forEach(article => {
+  articles.appendChild(article);
 });

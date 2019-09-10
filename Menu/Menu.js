@@ -34,36 +34,38 @@ let menuItems = [
   
 */
 
-// Assign elements outside of menuComponent function
-const menuButton = document.querySelector(".menu-button");
+// Query Selectors for Header and Menu Button
 const menuHeader = document.querySelector(".header");
+const menuButton = document.querySelector(".menu-button");
 
 function menuComponent(array) {
-  // Create Elements
+  // Create Elements for Function
   const menuDiv = document.createElement("div");
   const menuList = document.createElement("ul");
 
-  // Append Children
+  // Add Classes to Elements
+  menuDiv.classList.add("menu");
+
+  // Append Children to Parents
   menuDiv.appendChild(menuList);
 
-  // Add Classes
-  menuList.classList.add("menu");
-
-  // forEach Loop for list items
+  // forEach Loop to add list items to list
   array.forEach(item => {
-    let menuListItem = document.createElement("li");
+    const menuListItem = document.createElement("li");
     menuListItem.textContent = item;
     menuList.appendChild(menuListItem);
   });
 
-  // Event Listener
+  // Add Event Listener for Menu Buttom
   menuButton.addEventListener("click", e => {
-    menuList.classList.toggle("menu--open");
+    menuDiv.classList.toggle("menu--open");
   });
 
-  return menuList;
+  // Return the Menu Div
+  return menuDiv;
 }
 
+// Create a forEach loop over the menuItems
 menuItems.forEach(item => {
   menuHeader.appendChild(menuComponent(menuItems));
 });

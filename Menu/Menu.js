@@ -1,12 +1,12 @@
 /* This is the data we will be using, study it but don't change anything, yet. */
 
 let menuItems = [
-  'Students',
-  'Faculty',
+  "Students",
+  "Faculty",
   "What's New",
-  'Tech Trends',
-  'Music',
-  'Log Out'
+  "Tech Trends",
+  "Music",
+  "Log Out"
 ];
 
 /* 
@@ -33,3 +33,44 @@ let menuItems = [
   Step 6: add the menu component to the DOM.
   
 */
+
+// Query Selectors for Header and Menu Button
+const menuHeader = document.querySelector(".header");
+const menuButton = document.querySelector(".menu-button");
+
+function menuComponent(array) {
+  // Create Elements for Function
+  const menuDiv = document.createElement("div");
+  const menuList = document.createElement("ul");
+
+  // Add Classes to Elements
+  menuDiv.classList.add("menu");
+
+  // Append Children to Parents
+  menuDiv.appendChild(menuList);
+
+  // forEach Loop to add list items to list
+  array.forEach(item => {
+    const menuListItem = document.createElement("li");
+    menuListItem.textContent = item;
+    menuList.appendChild(menuListItem);
+  });
+
+  // Return the Menu Div
+  return menuDiv;
+}
+
+// Create a forEach loop over the menuItems
+menuItems.forEach(item => {
+  menuHeader.appendChild(menuComponent(menuItems));
+});
+
+// STRETCH - Menu Animation
+$(".menu-button").click(function(event) {
+  event.stopPropagation();
+  $(".menu").animate({ width: "toggle" }, 350);
+});
+
+$("html").click(function() {
+  $(".menu").animate({ width: "hide" }, 350);
+});

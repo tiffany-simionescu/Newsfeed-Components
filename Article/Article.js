@@ -3,7 +3,7 @@
 const data = [
   {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -23,8 +23,8 @@ const data = [
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -43,8 +43,8 @@ const data = [
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -71,8 +71,8 @@ const data = [
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -85,6 +85,24 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+  {
+    title: "My Doggo Ispum Life",
+    date: "Sept 1st, 2019",
+    firstParagraph: `Doggo ipsum extremely cuuuuuute smol wow such tempt, stop it fren. Shooberino noodle horse shooberino I am bekom fat most angery pupper I have ever seen doggorino, you are doing me a frighten big ol pupper he made many woofs long bois. floofs stop it fren. Dat tungg tho very jealous pupper puggo snoot, the neighborhood pupper maximum borkdrive. Smol floofs long bois smol long doggo, floofs heckin good boys. Blep dat tungg tho porgo heckin good boys thicc bork, borkf clouds woofer. very taste wow you are doing me the shock doggo. Doing me a frighten shoober pupperino boofers what a nice floof snoot, the neighborhood pupper boof very taste wow. Maximum borkdrive porgo shoob shibe puggorino, floofs boofers blep.`,
+
+    secondParagraph: `Very hand that feed shibe smol wow very biscit he made many woofs yapper pupperino, shibe noodle horse boofers.  Pupper long woofer waggy wags the neighborhood pupper very good spot shoob, many pats doggo borkdrive h*ck. ruff stop it fren very taste wow. You are doing me the shock long bois what a nice floof length boy woofer yapper, floofs mlem you are doing me the shock doggorino. many pats. Aqua doggo woofer you are doing me a frighten shibe lotsa pats blop, big ol maximum borkdrive heck woofer. Ur givin me a spook blep woofer corgo extremely cuuuuuute, ruff bork.`,
+
+    thirdParagraph: `Porgo adorable doggo woofer much ruin diet you are doing me a frighten h*ck adorable doggo mlem, sub woofer he made many woofs boof you are doin me a concern puggo. Bork extremely cuuuuuute big ol much ruin diet wow very biscit clouds heckin, thicc long bois wow very biscit mlem heckin. Adorable doggo shibe bork heckin good boys, lotsa pats blop. Snoot very good spot vvv ur givin me a spook, long woofer you are doing me a frighten. He made many woofs heck smol, porgo.`
+  },
+  {
+    title: "My Cat Ispum Life",
+    date: "Sept 2nd, 2019",
+    firstParagraph: `Attack feet behind the couch destroy couch flop over give attitude hide when guests come over hopped up on goofballs hunt anything that moves all of a sudden go crazy shake treat  need to chase tail, bag stretch intently stare at the same spot swat at dog make muffins lick butt  intrigued by the shower chew ipad power cord  inspect anything brought into the house  claw drapes chase imaginary bugs  stand in front of the computer screen , behind the couch shake treat  make muffins give attitude chase imaginary bugs hide when guests come over flop over chew ipad power cord  destroy couch.`,
+
+    secondParagraph: `Give attitude behind the couch destroy couch inspect anything brought into the house intently stare at the same spot hopped up on goofballs hunt anything that moves hide when guests come over make muffins lick butt all of a sudden go crazy, attack feet  claw drapes shake treat  swat at dog chew ipad power cord   stand in front of the computer screen   intrigued by the shower need to chase tail chase imaginary bugs, flop over bag stretch destroy couch lick butt hunt anything that moves  claw drapes hopped up on goofballs hide when guests come over flop over.`,
+
+    thirdParagraph: `Bag stretch lick butt  stand in front of the computer screen  intently stare at the same spot chase imaginary bugs  claw drapes shake treat , behind the couch all of a sudden go crazy destroy couch give attitude hopped up on goofballs. Hide when guests come over chase imaginary bugs  stand in front of the computer screen  inspect anything brought into the house make muffins  intrigued by the shower destroy couch swat at dog  claw drapes flop over`
   }
 ];
 
@@ -112,3 +130,54 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function articleComponent(obj) {
+  // Create Elements
+  const myArticleDiv = document.createElement("div");
+  const myTitle = document.createElement("h2");
+  const myDate = document.createElement("p");
+  const myFirstParagraph = document.createElement("p");
+  const mySecondParagraph = document.createElement("p");
+  const myThirdParagraph = document.createElement("p");
+  const myButton = document.createElement("span");
+
+  // appendChild to Parent Node
+  myArticleDiv.appendChild(myTitle);
+  myArticleDiv.appendChild(myDate);
+  myArticleDiv.appendChild(myFirstParagraph);
+  myArticleDiv.appendChild(mySecondParagraph);
+  myArticleDiv.appendChild(myThirdParagraph);
+  myArticleDiv.appendChild(myButton);
+
+  // Apply Styles
+  myArticleDiv.classList.add("article");
+  myButton.classList.add("expandButton");
+  myDate.classList.add("date");
+
+  // Add Content to Elements
+  myTitle.textContent = obj.title;
+  myDate.textContent = obj.date;
+  myFirstParagraph.textContent = obj.firstParagraph;
+  mySecondParagraph.textContent = obj.secondParagraph;
+  myThirdParagraph.textContent = obj.thirdParagraph;
+  myButton.textContent = "Click to Expand";
+
+  // STRETCH - Added a Close Button
+  myButton.addEventListener("click", e => {
+    if (myButton.textContent === "Click to Expand") {
+      myArticleDiv.classList.toggle("article-open");
+      myButton.textContent = "Click to Close";
+    } else {
+      myArticleDiv.classList.toggle("article-open");
+      myButton.textContent = "Click to Expand";
+    }
+  });
+
+  return myArticleDiv;
+}
+
+const articles = document.querySelector(".articles");
+
+data.forEach(data => {
+  articles.appendChild(articleComponent(data));
+});

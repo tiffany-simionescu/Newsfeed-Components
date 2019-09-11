@@ -56,11 +56,6 @@ function menuComponent(array) {
     menuList.appendChild(menuListItem);
   });
 
-  // Add Event Listener for Menu Buttom
-  menuButton.addEventListener("click", e => {
-    menuDiv.classList.toggle("menu--open");
-  });
-
   // Return the Menu Div
   return menuDiv;
 }
@@ -68,4 +63,14 @@ function menuComponent(array) {
 // Create a forEach loop over the menuItems
 menuItems.forEach(item => {
   menuHeader.appendChild(menuComponent(menuItems));
+});
+
+// STRETCH - Menu Animation
+$(".menu-button").click(function(event) {
+  event.stopPropagation();
+  $(".menu").animate({ width: "toggle" }, 350);
+});
+
+$("html").click(function() {
+  $(".menu").animate({ width: "hide" }, 350);
 });
